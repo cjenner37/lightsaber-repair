@@ -193,7 +193,11 @@ body {
   padding-bottom: 56%;
   /* for an aspect ratio */
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  flex-wrap: wrap; }
+  #hero-repair h3 {
+    color: burlywood;
+    margin-top: 15px; }
 
 #hero-history {
   background-image: url("../images/all-sabers.png");

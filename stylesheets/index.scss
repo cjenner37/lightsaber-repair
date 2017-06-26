@@ -36,6 +36,11 @@ body {
   padding-bottom: 56%; /* for an aspect ratio */
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  h3 {
+    color: burlywood;
+    margin-top: 15px;
+  }
 }
 
 #hero-history {
