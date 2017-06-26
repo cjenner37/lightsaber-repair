@@ -1,0 +1,68 @@
+@import 'nav';
+
+body {
+	margin: 0;
+}
+
+.hero {
+	// border: 1px solid white;
+	height: 0;
+    padding: 0; /* remove any pre-existing padding, just in case */
+
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#hero-home {
+	background-image: url("../images/duel.jpg");
+  padding-bottom: 62%; /* for an aspect ratio */
+}
+
+.home-title {
+	padding-top: 40px;
+}
+
+#home-description {
+	display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 60px;
+    
+}
+
+#hero-repair {
+	background-image: url("../images/droids.png");
+  padding-bottom: 56%; /* for an aspect ratio */
+  display: flex;
+  justify-content: center;
+}
+
+#hero-history {
+	background-image: url("../images/all-sabers.png");
+  padding-bottom: 51%; /* for an aspect ratio */
+  box-shadow: 0px 6px 8px #445b6a;
+}
+
+#hero-contact {
+	background-image: url("../images/moons.png");
+  padding-bottom: 56%; /* for an aspect ratio */
+  display: flex;
+  justify-content: center;
+}
+
+#hero-jackson {
+	background-image: url("../images/x-wings.jpg");
+  padding-bottom: 56%; /* for an aspect ratio */
+}
+
+.contact-form label {
+	color: lightyellow;
+	margin-left: 10%;
+}
+
+#map {
+        height: 450px;
+        width: 66%;
+        margin-top: 30px;
+       }
