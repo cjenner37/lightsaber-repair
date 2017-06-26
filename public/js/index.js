@@ -1,11 +1,14 @@
 $(document).ready(function () {
 	
 	$("#burger").click(function() {
+		var $self = $(this);
 	  $(this).toggleClass("active");
 	  $("nav").toggleClass("show");
-	  console.log("you clicked")
+	  if ($(this).hasClass("active")) {  	
+		  $('.hero').click(function () {
+		  	$self.removeClass("active");
+		  	$('nav').removeClass("show");
+		  })
+	  }
 	});
-
-	console.log("I'm here")
-	
 })
