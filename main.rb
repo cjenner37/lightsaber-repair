@@ -17,6 +17,10 @@ get '/history' do #this is where they view previous projects, reviews, etc
 	erb :history
 end
 
+get '/jackson' do
+	erb :jackson
+end
+
 post '/contact_form' do
 	@name = params[:name]
 	@email = params[:email]
