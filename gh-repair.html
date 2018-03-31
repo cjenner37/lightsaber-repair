@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title> 
+	<!-- JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="public/css/index.css">
+	<!-- JS -->
+	<script type="text/javascript" src="public/js/index.js"></script>
+</head>
+<body>
+	<div id="container">
+	  <div id="burger">
+	          <div class="bun top"></div>
+	          <div class="filling"></div>
+	          <div class="bun bottom"></div>
+	  </div>
+	</div>
+
+	<nav>
+	  <ul>
+	    <li>
+	      <a href="gh-home.html">Home</a>
+	    </li>
+	    <li class="green">
+	      <a href="gh-repair.html">Repair</a>
+	    </li>
+	    <li class="red">
+	      <a href="gh-history.html">History</a>
+	    </li>
+	    <li class="yellow">
+	      <a href="gh-contact.html">Contact</a>
+	    </li>
+
+	  </ul>
+	</nav>
+	<style type="text/css">html {background-color:#483c2c !important;}</style>
+	<div class="hero" id="hero-repair">
+
+		<div id="map"></div>
+		   <script>
+		      function initMap() {
+		      	let Geocoder = new google.maps.Geocoder;
+		      	let address = "350 State Street, Salt Lake City, UT, 84109";
+		      	Geocoder.geocode({'address': address}, function (results, status) {
+		      		let shopLocation = results[0].geometry.location;
+		      		let shop = {
+		      			lat: shopLocation.lat(),
+		      			lng: shopLocation.lng()
+		      		}
+			        var map = new google.maps.Map(document.getElementById('map'), {
+			          zoom: 9,
+			          center: shop
+			        });
+			        var marker = new google.maps.Marker({
+			          position: shop,
+			          map: map
+			        });
+		      	});
+		      }
+		   </script>
+		   <h3>Please visit the Contact page to schedule a repair.</h3>
+	</div>
+	<script async defer
+	   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtxYYO_SOHNttoY0E1wq9X_oP0i79f5Gw&callback=initMap">
+	</script>
+
+</body>
+</html>

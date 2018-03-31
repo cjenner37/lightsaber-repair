@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title> 
+	<!-- JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="public/css/index.css">
+	<!-- JS -->
+	<script type="text/javascript" src="public/js/index.js"></script>
+</head>
+<body>
+	<div id="container">
+	  <div id="burger">
+	          <div class="bun top"></div>
+	          <div class="filling"></div>
+	          <div class="bun bottom"></div>
+	  </div>
+	</div>
+
+	<nav>
+	  <ul>
+	    <li>
+	      <a href="gh-home.html">Home</a>
+	    </li>
+	    <li class="green">
+	      <a href="gh-repair.html">Repair</a>
+	    </li>
+	    <li class="red">
+	      <a href="gh-history.html">History</a>
+	    </li>
+	    <li class="yellow">
+	      <a href="gh-contact.html">Contact</a>
+	    </li>
+
+	  </ul>
+	</nav>
+	<style type="text/css">html {background-color:#4a3934}</style>
+	<div class="hero" id="hero-contact">
+
+		<div class="col-10 contact-form">
+			<form action="/contact_form" method="POST">
+			<h1 class="display-1">Contact Us</h1>
+			   <div class="form-group">
+				  	<div class="col-5">
+					  	<label for="name">Your name:</label>
+				  	 	<input class="form-control" name="name" type="text" value="Enter name..." id="form-name">
+				  	</div>
+				   <div class="col-5">
+					    <label for="inputEmail">Your email address:</label>
+					    <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email...">
+				   </div>
+				</div>
+				<div class="col-5">
+			   	<label for="exampleTextarea">Your message:</label>
+				</div>
+			  <div class="form-group col-8">
+			    <textarea class="form-control" name="message" id="exampleTextarea" rows="8" placeholder="Enter message..."></textarea>
+			  </div>
+
+			  <div class="form-group col">
+				  <button type="submit" class="btn btn-primary">Submit</button>
+			  </div>	  
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>
